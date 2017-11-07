@@ -19,7 +19,7 @@ Ok... cool. What does that mean?
 When you branch, you diverge from the main line of development so that you can work on some changes without affecting the main line. 
 
 ### When do I branch?
-You'll typically create new branches when you're developing a feature or putting in a fix. Keeping your changes organized and separated into branches will allow you to work faster overall and with less complications. 
+You'll typically create new branches when you're developing a feature or putting in a fix. Keeping your changes organized and separated into branches will allow you to work faster overall and with less complications. It also makes it easier to get your code reviewed. When your PRs contain smaller, focused packages of code, a reviewer doesn't need to spend as much time contextualizing or making sense of your changes - this leads to more efficient reviews!
 
 For example, let's say your project's main branch is `master` and it is the 'source of truth' of the state of your live app- everything that is merged into this branch should be ready to be online. Now let's say there are two new features you want to add to your project. If the features are not dependent on each other, this is a good opportunity to create a new branch for each of them. 
 
