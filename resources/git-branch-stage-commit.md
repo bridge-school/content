@@ -1,4 +1,4 @@
-# Git Basics (branch, stage, commit)
+# Git: Branch, Stage, Commit
 Suppose you have just forked and cloned a repository onto your local machine. You're interested in making some changes to it, then eventually requesting that your changes be merged back into that repository. How do you get there?
 
 A good place to start is always to check the state of your files.
