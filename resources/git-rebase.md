@@ -6,7 +6,9 @@ Git rebase takes a branch you select and merges it on to the branch where you’
 
 ## You said it merges the branches. Why not use `git merge`?
 
-Git rebase solves the same issues as git merge, but git merge will make a merge commit every time you pull upstream changes. This can make your git history really noisy, really fast, making it difficult for you and your team to understand the history of your project.
+Git rebase solves the same issues as git merge, but rebasing results in a cleaner, easier to understand commit history (better for everyone trying to understand the history of your project!). Rebasing keeps your history clean by moving your commits to the end of your git history, while git merge makes a merge commit every time you pull upstream changes, but keeps your commits at the same at the same point in history when they were made (resulting in a strange spliting of your changes in your git history). 
+
+tl;dr: git rebase makes your commit history easier to read than git merge. To learn more about the difference between merging and rebasing (with handy diagrams!), check out this link: https://www.atlassian.com/git/tutorials/merging-vs-rebasing  
 
 ## When should I rebase?
 
@@ -25,7 +27,7 @@ Using the interactive mode when performing a rebase helps as well. Interactive m
 Using interactive mode when rebasing lets you see the commits that you're rebasing, and allows you to edit and squash commits.
 
 ## What is git squash?
-Git squash allows you to take several commits and merge them into a single commit. Say you've finished a feature - styling a nav bar - and your git history looks like this:
+Git squash allows you to take several commits and combine them into a single commit. Say you've finished a feature - styling a nav bar - and your git history looks like this:
 ```
 3f0e9cdcda init commit
 9845111670 in progress
@@ -33,7 +35,7 @@ cd362d2f52 still working
 300571e57c styled nav bar
 ```
 
-To keep your git history clean and easy to read, you can merge all of these commits into a single commit and update your commit message. You can do this by rebasing your current branch into itself, and then squashing your commits together, like this:
+To keep your git history clean and easy to read, you can combine all of these commits into a single commit and update your commit message. You can do this by rebasing your current branch into itself, and then squashing your commits together, like this:
 
 `git rebase -i <nameOfBranchYouAreOn>~4`
 
@@ -55,7 +57,19 @@ s cd362d2f52 still working
 s 300571e57c styled nav bar
 ```
 
-Save your choices, and once you've done this, git will give you the option of editing the commit messages for all of the commits you've changed. You can edit your commit messages into a single commit that describes the work you've done on the branch. When you're finished editing the messages, save and quit your editor. You did it!
+Save your choices:
+`cmd + s`, then `cmd+ w`
+
+Once you've done this, git will give you the option of editing the commit messages for all of the commits you've changed. You can edit your commit messages into a single commit that describes the work you've done on the branch. When you're finished editing the messages, save and quit your editor.
+
+At this point you can push your new, squashed changes. You'll likely need to force push, so rather than:
+`git push`
+
+you'll need:
+
+`git push -f`
+
+You use the -f flag to force update your git history on your remote branch after you rebase. If you don't force push your code, you'll get merge conflicts, and no one likes dealing with those.
 
 ## When shouldn't I rebase?
 Once you've pushed your code to your team's repo, don't rebase anymore. If your code is in the repo, other people on your team may have pulled your work and rebased their branches. Rebasing at this point can cause messiness and merge conflicts.
@@ -64,3 +78,4 @@ Similairly, once you've put up a PR and someone on your team has reviewed it and
 
 
 If you are curious about what’s going on under the hood when you run `git rebase`, you can read more about the mechanics of it here: https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+
