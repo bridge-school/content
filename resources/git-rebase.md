@@ -14,7 +14,9 @@ tl;dr: git rebase makes your commit history easier to read than git merge. To le
 
 One common reason for rebasing is to get changes from another branch and apply them to your own. Let’s say you and your team are busy working on your project. You’re coding on your local branch when someone else on your team finishes a feature and merges it to master. The new code your friend just pushed is a change you want on your local branch. You can use `git rebase <nameOfYourFriendsBranch>` to add these changes to your local branch and keep working.
 
-Another reason to rebase is to head off any potential merge conflicts. A merge conflict occurs when your branch and another branch have code edits on the same lines. Git doesn’t know which of the edits should be kept, so it throws a conflict that a human (you!) has to resolve.
+Another reason to rebase is to head off (or handle!) any potential merge conflicts. A merge conflict occurs when two branches have code edits on the same lines. Git doesn’t know which of the edits should be kept, so it throws a conflict that a human (you!) has to resolve. So if a teammate's branch is merged before yours and you and your teammate have both touched the same files, your branch could now have merge conflicts. The fix? Rebasing.
+
+Your team norms might dictate other times you need to rebase - for example, a team might agree that if your branch has _any_ outdated changes from master, you rebase. 
 
 ## Merge conflicts sound terrible. How can I make sure I never have to deal with them?
 
