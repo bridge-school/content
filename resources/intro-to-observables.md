@@ -3,7 +3,7 @@
 Since JavaScript is single-threaded, we often run into situations that involve asynchronous data flows.
 
 ## What are asynchronous data flows again? 
-Data from functions that are processed in their own time where the results will arrive outside the regular flow of the app. 
+Data from functions that are processed in their own time, where the results will arrive outside the regular flow of the app. 
 
 For example, we often see this in the context of API calls when we request data from another server or backend service. We make a request for the data on the side and, once the data arrives, we put it in a queue to be processed. We don't actually stop and hold up all activity in the app until the data comes back. Instead, we put it to the side and process it when it arrives (and when we're ready) - [*insert link to event loop bridge content here*].
 
@@ -14,11 +14,11 @@ Yes, we can use callback functions and promises for example. But Observables are
 
 ## Why should I care?
 
-Observables play a key part in something called **reactive programming**. This is the concept that anything can be turned into a data stream (a sequence of values in time). You can choose to listen to these streams and, as data comes through them, react accordingly. 
+Observables play a key part in something called **reactive programming**. This is the concept of programming with asynchronous data streams (a sequence of values in time). You can choose to listen to these streams and, as data comes through them, react accordingly. 
 
 Data streams are functional - so you can use streams as inputs into other streams, combine them, filter them, etc using a variety of helpful functions. 
 
-Observables are now included in the current version of JavaScript (as of ES7) and Angular now has them baked in using a third-party library called RxJS (Reactive Extensions). In Angular, Observables are used for its event system and HTTP client service. In addition, we're starting to see more React projects use RxJS to take advantage of Observables to manage streams.
+Angular has Observables baked into core parts of its library, such as its event system and HTTP client service, using a third-party library called RxJS (Reactive Extensions). In addition, we're starting to see more React projects use RxJS to take advantage of Observables to manage streams.
 
 ## What is an Observable?
 
@@ -46,19 +46,14 @@ As the data arrives, the box notifies anyone that has requested they be updated 
 
 In its simpliest form, an Observable is a function that accepts an object (an observer) with next, error and complete methods on it. 
 
-When you create an observable, you call its constructor and pass in a function. That function takes in an observer as a parameter and its body contains instructions for the observable to know when to call each of the observer's methods. 
+When you create an observable, you call its constructor and pass in a function. That function takes in an observer as a parameter and its body contains instructions for when to call each of the observer's methods. 
 
-For example ([source](https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87))
+For example:
 
 ```javascript
-const this.data = Observable.create(observer => {
-    const datasource = new DataSource();
-    datasource.ondata = (e) => observer.next(e);
-    datasource.onerror = (err) => observer.error(err);
-    datasource.oncomplete = () => observer.complete();
-    return () => {
-        datasource.destroy();
-    };
+const data = Observable.create(observer => {
+  setTimeout(() => observer.next('first'), 1000);
+  setTimeout(() => observer.complete(), 3000);
 });
 ```
 
@@ -70,7 +65,11 @@ When you subscribe to an observable, this is the equivilant to calling the obser
 
 ```javascript
 this.data
-    .subscribe(myObserver);
+    .subscribe({
+        next: console.log,
+        error: console.error,
+        complete: () => console.info('complete')
+    });
 ```
 
 Our observer contains 1 to 3 functions to be executed by the observable:
@@ -79,6 +78,9 @@ Our observer contains 1 to 3 functions to be executed by the observable:
  - complete: function that will be executed when a 'completed' is emitted (optional)
 
  ```javascript
+this.data
+    .subscribe(myObserver);
+
 const myObserver = {
     next: console.log,
     error: console.error,
@@ -88,13 +90,15 @@ const myObserver = {
 
 Those functions you pass in as part of the observer object will stay active and listen for those events until you manually decide to unsubscribe from and stop listening to the observable.
 
-Note: `error` and `complete` are optional. But when these functions are called, they will trigger the unsubscription logic and the observer will stop listening to the observable.
+Note: `error` and `complete` are optional. But when these functions are called, they will trigger the unsubscription logic and the observer will stop listening to the observable. So if there is an error, the complete won't fire and vice versa.
 
 When you subscribe, the observable sets up your observer with the functions you pass in and, when it emits, it'll call those functions.
 
-## Another basic example 
+## Basic example
 
 [Open in JSbin](https://jsbin.com/penicovixi/edit?js,console)
+
+*(example by Philip Da Silva)*
 
 ## How do Observables compare?
 
@@ -112,12 +116,12 @@ Observables:
 - Allows us to chain together array-like operators and pass observable streams through to parse, modify and maintain the data within them. We'll look at these next.
 
 ## Resources
-
-- https://xgrommx.github.io/rx-book/why_rx.html
-- https://developer.telerik.com/topics/web-development/introduction-observables-angular-developers/
-- https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87
-- https://angular-2-training-book.rangle.io/handout/observables/
-- https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339
-- Angular IO on observables
-- ES 2017 documentation on Observables?
-- https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
+- [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+- [RxBook](https://xgrommx.github.io/rx-book/why_rx.html)
+- [Learning Observable By Building Observable](https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87)
+- [An Introduction to Observables for Angular Developers](https://developer.telerik.com/topics/web-development/introduction-observables-angular-developers/)
+- [Angular 2 Training: Observables](https://angular-2-training-book.rangle.io/handout/observables/)
+- [Hot vs Cold Observables](https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339)
+- [Observables and Reactive Programming in Angular 2](http://blog.rangle.io/observables-and-reactive-programming-in-angular-2/)
+- [Learn RxJS](https://www.learnrxjs.io/)
+- [RxJS](http://reactivex.io/rxjs/)
