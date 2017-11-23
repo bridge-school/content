@@ -64,7 +64,7 @@ Save your choices:
 
 Once you've done this, git will give you the option of editing the commit messages for all of the commits you've changed. You can edit your commit messages into a single commit that describes the work you've done on the branch. When you're finished editing the messages, save and quit your editor.
 
-At this point you can push your new, squashed changes. You'll likely need to force push, so rather than:
+At this point you can push your new, squashed changes. Since you've just changed the git history of your branch, you'll need to force push, so rather than:
 `git push`
 
 you'll need:
