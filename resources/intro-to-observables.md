@@ -40,7 +40,7 @@ Some key points to note about the pattern:
 
 Think of an observable as a box that you create to hold data from a service or function whose data or items will arrive over time. 
 
-As the data arrives, the box notifies anyone that has requested they be updated and it does so in the way they've asked. (Note: once new data arrives, the previous data no longer exists in the box. It's up to the listener to maintain the previous data if needed.)  
+As the data arrives, the box notifies anyone that has requested they be updated and it does so in the way they've asked.
 
 ## Basic structure
 
