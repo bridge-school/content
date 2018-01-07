@@ -145,7 +145,7 @@ Using the keyword `let` instead of `var` with this example returns a new error:
 ```
 favouriteFood3("pineapple")
 
-var favouriteFood3 = function(food) {
+let favouriteFood3 = function(food) {
   console.log("My favourite food is " + food);
 }
 
