@@ -51,8 +51,8 @@ let listOfPetAgesInHumanYears = listOfPets.map(function(pet) {
 });
 ```
 
-- `map` exists as a method on all arrays, it takes one uncalled function as an argument
-- This uncalled function is called for each item in the array, as map iterates over each item
+- `map` exists as a method on all arrays, it takes one (also known as an anonymous function) function as an argument
+- This anonymous function is called for each item in the array, as map iterates over each item
 - This function is provided the value currently being iterated over as the first parameter, in the above
 case, that means that `pet` represents `{type: 'Dog', age: 5}` the first time it is called, then `{type: 'Cat', age: 11}` the second time, 
 and then `{type: 'Dog', age: 9}` the third.

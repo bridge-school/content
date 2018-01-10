@@ -41,8 +41,8 @@ let myListOfAges = [22, 12, 43, 44, 22, 54, 16, 87, 12];
 let myListOfOldEnoughAges = myListOfAges.filter(eachAge => eachAge >= 18);
 ```
 
-- `filter` exists as a method on all arrays, it takes one uncalled function as an argument
-- This uncalled function is called for each item in the array, as filter iterates over each item
+- `filter` exists as a method on all arrays, it takes one unnamed function (also known as an anonymous function) as an argument
+- This anonymous function is called for each item in the array, as filter iterates over each item
 - This function is provided the value currently being iterated over as the first parameter, in the above
 case, that means that `eachAge` represents `22` the first time it is called, then `12`, and then `43` and so on.
 - This function expects either a `true` or a `false` to be returned inside of it.
