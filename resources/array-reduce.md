@@ -43,8 +43,8 @@ const soldItems = [
 const totalSales = soldItems.reduce((accumulator, nextItem) => accumulator + nextItem.price, 0);
 ```
 
-- `reduce` exists as a method on all arrays, it takes one uncalled function as the first argument
-- This uncalled function is called for each item in the array, as reduce iterates over each item
+- `reduce` exists as a method on all arrays, it takes one unnamed function (also known as an anonymous function) as the first argument
+- This anonymous function is called for each item in the array, as reduce iterates over each item
 - It also takes an optional second parameter, which will act as the first value
   - In the above example, `0` is the optional second parameter
   - The first time reduce is called, `accumulator` is equal to `0`
