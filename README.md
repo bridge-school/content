@@ -10,7 +10,7 @@ If you are accessing this repository directly on your own, here is a directory o
     1. [Functions](./resources/general/functions.md)
     1. [Promises](./resources/general/promises.md)
     1. [Immutability](./resources/general/immutability.md)
-    1. [Interpreter](./resources/general/javasacript-interpreter.md)
+    1. [Interpreter](./resources/general/javascript-interpreter.md)
     1. [Event Loop](./resources/general/js-eventloop.md)
 1. Working with Arrays
     1. [Map](./resources/working-with-arrays/array-map.md)
