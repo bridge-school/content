@@ -81,7 +81,7 @@ If your team uses forks as part of their flow, after get acess to the main repos
 1) [Create a branch](./git-branch-stage-commit.md) for your feature: `git checkout -b feat/my-cool-feature`
 1) Develop! Commit! Get it to the point where you're ready to propose merging the code.
 1) Get the latest code from the upstream repo (other code may have been merged): `git fetch upstream`
-1) [Rebase](./git-rebase.md) your branch against the latest version of `master` from `upstream`: `git rebase upstream/master`
+1) [Rebase](git-rebase.md) your branch against the latest version of `master` from `upstream`: `git rebase upstream/master`
   1) Follow the steps, being very careful to resolve any _merge conflicts_ if necessary.
 1) Push your rebased branch to your `origin`: `git push origin feat/my-cool-feature`
 
