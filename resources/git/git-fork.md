@@ -34,7 +34,7 @@ Note: more about [managing `remote`s](#dealing-with-multiple-remotes) below.
 GitHub and most other git-based version control services have forking built in as a feature that will automatically create a new repository under your account and copy the source repository into your new repository.
 
 On GitHub, for example, this can be accomplished simply by clicking the "Fork" button in the top right corner, just under your account avatar. See here:
-![Forking on GitHub](images/github-fork.png)
+![Forking on GitHub](../images/github-fork.png)
 
 ## Why would we want a fork?
 ### Why not just branch?
