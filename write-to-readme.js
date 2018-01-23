@@ -34,5 +34,5 @@ function parseFileFolderNames(fileOrFolderName) {
 }
 
 function updateREADME(allReadme, replaceContentText) {
-    return allReadme.replace(/<!---generated start-->([\s\S]*?)<!---generated end-->/gmi, replaceContentText);
+    return allReadme.replace(/(<!---generated start-->)([\s\S]*?)(<!---generated end-->)/gmi, `$1 ${replaceContentText} $3`);
 }

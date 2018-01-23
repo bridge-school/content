@@ -10,7 +10,7 @@
   "scripts": {},
   "husky": {
     "hooks": {
-      "pre-commit": "node write-to-readme.js && git add"
+      "pre-commit": "node write-to-readme.js && git add README.md"
     }
   },
   "repository": {
