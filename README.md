@@ -6,47 +6,88 @@ This repository is the home of the reference material for [Bridge School](http:/
 
 If you are accessing this repository directly on your own, here is a directory of its contents in a proposed reading order:
 
-1. JavaScript General Topics
-    1. [Functions](./resources/general/functions.md)
-    1. [Promises](./resources/general/promises.md)
-    1. [Immutability](./resources/general/immutability.md)
-    1. [Interpreter](./resources/general/javascript-interpreter.md)
-    1. [Event Loop](./resources/general/js-eventloop.md)
-1. Working with Arrays
-    1. [Map](./resources/working-with-arrays/array-map.md)
-    1. [Filter](./resources/working-with-arrays/array-filter.md)
-    1. [Reduce](./resources/working-with-arrays/array-reduce.md)
-1. [Functional Programming](./resources/functional-programming/functional-programming.md)
-1. Observables
-    1. [Introduction](./resources/observables/observables-intro.md)
-    1. [`SwitchMap` vs `MergeMap`](./resources/observables/observable-switchmap-vs-mergemap.md)
-    1. [Create](./resources/observables/observable-create.md)
-1. React
-    1. [Introduction](./resources/react/react-intro.md)
-    1. [Component](./resources/react/react-component.md)
-    1. [Component Lifecycles](./resources/react/react-lifecycles.md)
-    1. [Summary](./resources/react/react-summary.md)
-    1. [Useful Libraries](./resources/react/resources.md)
-1. Redux
-    1. [Introduction](./resources/redux/redux-intro.md)
-    1. [Logging](./resources/redux/redux-logging.md)
-    1. [Thunk](./resources/redux/redux-thunk.md)
-    1. [*Hello World* Example](./resources/redux/redux-hello.md)
-1. Example App: Robodex
-    1. [Goals & outline](./resources/react/react-outline.md)
-    1. [Container](./resources/react/react-container.md)
-    1. [Redux Store](./resources/redux/redux-store.md)
-    1. [Redux Action & Reducer](./resources/redux/redux-action-reducer.md)
-1. Version Control (Git & GitHub)
-    1. [Introduction to Git](./resources/git/git-intro.md)
-    1. [Branching, Staging and Committing](./resources/git/git-branch-stage-commit.md)
-    1. [Rebasing](./resources/git/git-rebase.md)
-    1. [Forking a repository](./resources/git/git-fork.md)
-1. Other
-    1. [Setting Up Node](./resources/other/set-up-node.md)
-    1. [Tips and Tricks](./resources/other/tips-and-tricks.md)
-    1. [Git TLDR cheatsheet](./resources/other/git-cheatsheet.md)
-1. Stub for future content
-    1. [Redux Merge](./resources/future-content/redux-merge.md)
-    1. [Redux Connect](./resources/future-content/redux-connect.md)
+<!---generated start--> 
+1. Javascript General Topics
     
+    1. [Functions](./resources/1-Javascript-General-Topics/functions.md)
+
+    1. [Immutability](./resources/1-Javascript-General-Topics/immutability.md)
+
+    1. [Javascript Interpreter](./resources/1-Javascript-General-Topics/javascript-interpreter.md)
+
+    1. [Js Eventloop](./resources/1-Javascript-General-Topics/js-eventloop.md)
+
+    1. [Promises](./resources/1-Javascript-General-Topics/promises.md)
+
+2. Working With Arrays
+    
+    1. [Array Filter](./resources/2-Working-With-Arrays/array-filter.md)
+
+    1. [Array Map](./resources/2-Working-With-Arrays/array-map.md)
+
+    1. [Array Reduce](./resources/2-Working-With-Arrays/array-reduce.md)
+
+4. Observables
+    
+    1. [Observable Switchmap Vs Mergemap](./resources/4-Observables/observable-switchmap-vs-mergemap.md)
+
+    1. [Observables Create](./resources/4-Observables/observables-create.md)
+
+    1. [Observables Intro](./resources/4-Observables/observables-intro.md)
+
+5. React
+    
+    1. [React Component](./resources/5-React/react-component.md)
+
+    1. [React Container](./resources/5-React/react-container.md)
+
+    1. [React Intro](./resources/5-React/react-intro.md)
+
+    1. [React Lifecycles](./resources/5-React/react-lifecycles.md)
+
+    1. [React Outline](./resources/5-React/react-outline.md)
+
+    1. [React Summary](./resources/5-React/react-summary.md)
+
+3. Functional Programming
+    
+    1. [Functional Programming](./resources/3-Functional-Programming/functional-programming.md)
+
+7. Git
+    
+    1. [Git Branch Stage Commit](./resources/7-Git/git-branch-stage-commit.md)
+
+    1. [Git Cheatsheet](./resources/7-Git/git-cheatsheet.md)
+
+    1. [Git Fork](./resources/7-Git/git-fork.md)
+
+    1. [Git Intro](./resources/7-Git/git-intro.md)
+
+    1. [Git Rebase](./resources/7-Git/git-rebase.md)
+
+6. Redux
+    
+    1. [Redux Action Reducer](./resources/6-Redux/redux-action-reducer.md)
+
+    1. [Redux Connect](./resources/6-Redux/redux-connect.md)
+
+    1. [Redux Hello](./resources/6-Redux/redux-hello.md)
+
+    1. [Redux Intro](./resources/6-Redux/redux-intro.md)
+
+    1. [Redux Logging](./resources/6-Redux/redux-logging.md)
+
+    1. [Redux Merge](./resources/6-Redux/redux-merge.md)
+
+    1. [Redux Store](./resources/6-Redux/redux-store.md)
+
+    1. [Redux Thunk](./resources/6-Redux/redux-thunk.md)
+
+8. Other
+    
+    1. [Resources](./resources/8-Other/resources.md)
+
+    1. [Set Up Node](./resources/8-Other/set-up-node.md)
+
+    1. [Tips And Tricks](./resources/8-Other/tips-and-tricks.md)
+ <!---generated end-->
