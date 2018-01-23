@@ -7,8 +7,10 @@
     "rxjs": "^5.5.6"
   },
   "devDependencies": {},
-  "scripts": {
-    "precommit": ["node write-to-readme.js", "git add"]
+  "husky": {
+    "hooks": {
+      "pre-commit": ["node write-to-readme.js", "git add"]
+    }
   },
   "repository": {
     "type": "git",
