@@ -68,19 +68,7 @@ If you are accessing this repository directly on your own, here is a directory o
 
     1. [Redux Store](./resources/6-Redux/redux-store.md)
 
-    1. [Redux Thunk](./resources/6-Redux/redux-thunk.md)
 
-7. Git
-    
-    1. [Git Branch Stage Commit](./resources/7-Git/git-branch-stage-commit.md)
-
-    1. [Git Cheatsheet](./resources/7-Git/git-cheatsheet.md)
-
-    1. [Git Fork](./resources/7-Git/git-fork.md)
-
-    1. [Git Intro](./resources/7-Git/git-intro.md)
-
-    1. [Git Rebase](./resources/7-Git/git-rebase.md)
 
 8. Other
     
