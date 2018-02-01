@@ -97,6 +97,7 @@ without it, you get what you have above. Now you might be asking, what kind of c
 
 
 ### Make a new array of x length easy
+
 Sometimes we need to make Arrays of a predefined length, lets say for example I want to make a function that will return me an array 
 of numbers up until a number passed in - if I give this function `5`, I should get back `[1, 2, 3, 4, 5]`. Normally a for loop would do the trick, but what about
 something taking a bit less code?

@@ -5,6 +5,7 @@ After one learns how to use observables, it's often difficult understanding the 
 ### Different ways to create Observables
 
 #### Observable from anything
+
 - One of the simplest ways to make an observable is to to use `Observable.of()`, which will take any sort of object
 
 ```js
@@ -15,6 +16,7 @@ numberObservable.subscribe(result => console.log(result));
 
 ```
 #### Event based
+
 - We can use DOM events to create new observables
 
 ```js
@@ -25,6 +27,7 @@ clickEvents.subscribe(clickEvent => console.log(clickEvent));
 - Almost any sort of event from third party libraries would work as well
 
 ### Iterable/Promise based
+
 - We can make observable streams based off of arrays, useful when you want to iterate over each item in an array
 
 ```js

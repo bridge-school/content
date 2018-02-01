@@ -6,6 +6,7 @@ permalink: /reduce/
 
 
 ## Sometimes you need to turn an array of numbers into just one big number
+
 ```js
 let soldItems = [
   {productId: 1, price: 30.99},
@@ -24,11 +25,13 @@ for(let i = 0; i < soldItems.length; i++) {
 ```
 
 ## What is Array.reduce?
+
 - A functional programming tool found natively in javascript
 - Creates **any** new data structure
 - Does not modify the original array
 
 ## How does it work?
+
 - With the same example as above
 
 ```js
@@ -59,6 +62,7 @@ const totalSales = soldItems.reduce((accumulator, nextItem) => accumulator + nex
 
 
 ## Useful Tips
+
 - Remember that you can return any sort of type in your reduce, and it will resolve to it
 - A neat trick is turning an array into an object
 

@@ -1,6 +1,7 @@
 ## Useful Libraries
 
 ### How to install?
+
 ```sh
 npm install library_name --save
 npm i --save lib_name lib_name2 lib_name3
@@ -48,11 +49,6 @@ https://twitter.com/dan_abramov/status/824308413559668744
 
 * testing with react
 https://rangle-io.gitbooks.io/react-training/content/book/testing/setup.html
-
-
-
-
-
 
 
 

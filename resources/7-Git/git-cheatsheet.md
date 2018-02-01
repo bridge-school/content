@@ -43,6 +43,7 @@ git rebase upstream/master
 If you have skipped forking you can ignore most of the setup above, just make sure your origin is set to the base repo.
 
 ## Then each time you want to make a change:
+
 ```sh
 # update your local from the main repo
 git fetch origin

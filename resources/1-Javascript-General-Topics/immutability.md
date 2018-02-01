@@ -6,6 +6,7 @@ permalink: /immutability/
 
 
 ## Sometimes you need to turn an array of numbers into just one big number
+
 ```js
 let soldItems = [
   {productId: 1, price: 30.99},

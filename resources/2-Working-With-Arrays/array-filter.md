@@ -6,6 +6,7 @@ permalink: /filter/
 
 
 ## Imagine trying to filter out numbers from a list, less than 18
+
 ```js
 let myListOfAges = [22, 12, 43, 44, 22, 54, 16, 87, 12];
 
@@ -20,17 +21,20 @@ for(let i = 0; i < myListOfAges.length; i++) {
 ```
 
 ## Challenges
+
 - Takes multiple lines to handle even the simplest filters
 - Can be hard to quickly understand what is happening
 - Complexity increases significantly with more complex conditions
 
 ## What is Array.filter?
+
 - A functional programming tool found natively in javascript
 - Creates a new array based off the data in a base array
 - Does not modify the original array
 - Only the items from the original array that pass a test are copied into a new array
 
 ## How does it work?
+
 - With the same example as above
 
 ```js

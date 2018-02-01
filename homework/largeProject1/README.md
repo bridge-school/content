@@ -14,6 +14,7 @@ really grasp the lessons so that we have a solid foundation to work off of. This
     * Testing
 
 #### The assignment is as follows:
+
 [Using any endpoints from this link, or from anywhere for that matter,](https://github.com/toddmotto/public-apis)
 create a react application that fulfills the requested features and criteria:
 

@@ -6,6 +6,7 @@ permalink: /map/
 
 
 ## What if I want a list of pets ages in human years?
+
 ```js
 const listOfPets = [{type: 'Dog', age: 5}, {type: 'Cat', age: 11}, {type: 'Dog', age: 9}];
 
@@ -24,17 +25,20 @@ for(let i = 0; i < listOfPets.length; i++) {
 ```
 
 ## Challenges
+
 - Can be hard to quickly understand what is happening
 - Complexity increases significantly with more complex conditions
 - Difficult to ensure immutability (ie, that we don't overwrite values in the original array, we may need it again later)
 
 ## What is Array.map?
+
 - A functional programming tool found natively in javascript
 - Creates a new array based off the data in a base array
 - Does not modify the original array
 - Makes a new list the same length as the original, where the values may be entirely different
 
 ## How does it work?
+
 - With the same example as above
 
 ```js
