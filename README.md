@@ -27,14 +27,6 @@ If you are accessing this repository directly on your own, here is a directory o
 
     1. [Array Reduce](./resources/2-Working-With-Arrays/array-reduce.md)
 
-4. Observables
-    
-    1. [Observable Switchmap Vs Mergemap](./resources/4-Observables/observable-switchmap-vs-mergemap.md)
-
-    1. [Observables Create](./resources/4-Observables/observables-create.md)
-
-    1. [Observables Intro](./resources/4-Observables/observables-intro.md)
-
 3. Functional Programming
     
     1. [Functional Programming](./resources/3-Functional-Programming/functional-programming.md)
@@ -52,6 +44,14 @@ If you are accessing this repository directly on your own, here is a directory o
     1. [React Outline](./resources/5-React/react-outline.md)
 
     1. [React Summary](./resources/5-React/react-summary.md)
+
+4. Observables
+    
+    1. [Observable Switchmap Vs Mergemap](./resources/4-Observables/observable-switchmap-vs-mergemap.md)
+
+    1. [Observables Create](./resources/4-Observables/observables-create.md)
+
+    1. [Observables Intro](./resources/4-Observables/observables-intro.md)
 
 6. Redux
     
