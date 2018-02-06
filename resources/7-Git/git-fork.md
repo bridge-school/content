@@ -37,6 +37,7 @@ On GitHub, for example, this can be accomplished simply by clicking the "Fork" b
 ![Forking on GitHub](../images/github-fork.png)
 
 ## Why would we want a fork?
+
 ### Why not just branch?
 
 So far we have mostly discussed the reasons one may want or need to create a _hard_ fork of some project, where we intend on making permanently incompatible changes, but we have not justified our more typical (soft) fork situation. As you recall, this is for work which we want to eventually merge back into the main repository. Some reasons for doing this are:
@@ -46,17 +47,20 @@ So far we have mostly discussed the reasons one may want or need to create a _ha
 * **Experimental changes:** Sometimes you need to make large architectural changes or adjust CI/CD configuration, and it isn't acceptable to block work on the main repo. Configuring another pipeline against a fork is one option to get around this.
 
 ## Dealing with multiple `remote`s
+
 When you set up your local repository with multiple `remote` repositories (usually the main repository and your own fork), there are slight changes to some of the `git` commands you are accustomed to using. Specifically, for any commands that deal with remote repositories (`push`, `pull`, `fetch` etc), you now need to specify the repository with which you want to interact.
 
 For the following examples, imagine you cloned from your fork, so the repo copy under your account is the remote named `origin`, and we've added a second remote called `upstream` for the main reposiory.
 
 ### `pull`
+
 When pulling the latest changes for a tracked remote branch, you now specify the full source, including the remote name:
 ```shell
 $> git pull upstream master
 ```
 
 ### `push`
+
 Now when you push a branch, you will need to specify the target remote by name:
 ```shell
 $> git push origin my-cool-feature
@@ -64,15 +68,18 @@ $> git push origin my-cool-feature
 A common workflow is to push your work-in-progress feature branches to your fork, and then issue a Pull Request from there back to the main repository.
 
 ### `fetch`
+
 If you want to retrieve all of the latest changes from some remote (usually `upstream`), you can do so via `fetch`:
 ```shell
 $> git fetch upstream
 ```
 
 ### `rebase`
+
 _TBD_ - should we cover this?
 
 ## The Short Version
+
 If your team uses forks as part of their flow, after get acess to the main repository you should do the following:
 1) Create a personal fork of the repository on whichever platform the team uses.
 1) Clone _your fork_ locally: `git clone git@github.com:your-account/shared-repo.git`

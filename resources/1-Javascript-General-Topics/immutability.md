@@ -1,4 +1,5 @@
 ## Object Immutability
+
 - First, lets remember that we can have multiple variables all `pointing` to the same object
 - When this happens changing something in the copy seemingly changes something in the original too
 
@@ -22,6 +23,8 @@ console.log('the original ms Marvel', originalMsMarvel);
 - In the above example, the original object has been mutated!
 - This is because Javascript likes to have objects sharing references
 - There are ways around this
+
+## Sometimes you need to turn an array of numbers into just one big number
 
 ```js
 var originalMsMarvel = {
@@ -47,6 +50,7 @@ console.log('the original ms Marvel', originalMsMarvel);
 - When using object assign, the FIRST object is the final reference in memory, use a new object literal `{}` for a new reference
 
 ## Primitive Immutability
+
 - All Primitives are immutable! They cannot be changed like an object can be
 - [Primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
     - string, number, boolean, null, undefined, symbol (new in es2015)
@@ -64,6 +68,7 @@ console.log(originalMsMarvel, newMsMarvel);
 
 
 ### Const
+
 - Introduced in es2015 to help keep code immutable
 
 ```js

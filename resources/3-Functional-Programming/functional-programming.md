@@ -1,6 +1,7 @@
 ## Functional Programming (FP)
 
 ### Pure Functions
+
 * Idempotent: Given the same inputs, an idempotent function will always return the same output.
 
 * Free from side-effects: Pure functions can be safely applied with no side-effects, meaning that they do not mutate any shared state or mutable arguments, and other than their return value, they don’t produce any observable output, including thrown exceptions, triggered events, I/O devices, network, console, display, logs, etc...
@@ -25,6 +26,7 @@ Objects and arrays (which is a type of object) are not immutable.
 Out initial array's value has changed!
 
 ## Examples
+
 1. Find all the odd numbers in an array and return a new array containing only those numbers.
 
 **Imperatively**

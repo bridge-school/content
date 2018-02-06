@@ -1,6 +1,7 @@
 ## FP Exercises
 
 ## Scope and Closure
+
 1.
 ```javascript
   const stuff = ['backpack', 'water bottle'];
@@ -25,6 +26,7 @@
 ```
 
 ### Pure functions
+
 For each of the following functions decide whether they are pure functions or not and explain why briefly.
 
 1.

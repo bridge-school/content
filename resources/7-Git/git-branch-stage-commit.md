@@ -1,4 +1,5 @@
 # Git: Branch, Stage, Commit
+
 Suppose you have just forked and cloned a repository onto your local machine. You're interested in making some changes to it, then eventually requesting that your changes be merged back into that repository. How do you get there?
 
 A good place to start is always to check the state of your files.
@@ -15,10 +16,13 @@ nothing to commit, working tree clean
 Ok... cool. What does that mean? 
 
 ## Branching
+
 ### What is branching?
+
 When you branch, you diverge from the main line of development so that you can work on some changes without affecting the main line. 
 
 ### When do I branch?
+
 You'll typically create new branches when you're developing a feature or putting in a fix. Keeping your changes organized and separated into branches will allow you to work faster overall and with less complications. It also makes it easier to get your code reviewed. When your PRs contain smaller, focused packages of code, a reviewer doesn't need to spend as much time contextualizing or making sense of your changes - this leads to more efficient reviews!
 
 For example, let's say your project's main branch is `master` and it is the 'source of truth' of the state of your live app- everything that is merged into this branch should be ready to be online. Now let's say there are two new features you want to add to your project. If the features are not dependent on each other, this is a good opportunity to create a new branch for each of them. 
@@ -28,6 +32,7 @@ Why not make one new branch and work on both of them there? Here's one reason: w
 Why not work on them in master? The same as above, plus the added risk of making changes directly to the branch that reflects your live app (it could break). 
 
 ### Ok cool. How do I create/switch branches?
+
 Let's say you want to create a new branch for a feature called `favourites`. To **create** this new branch locally and switch to it, use this command:
 ```
 $ git checkout -b favourites
@@ -49,6 +54,7 @@ $ git checkout master
 That's pretty much it, just replace the branch names in the above commands to whatever branches you are creating or switching to. 
 
 ## Staging
+
 After you've made the changes in your branch, it is time to stage those changes.
 Let's say that in your `favourites` branch, you created a new file called `constants.js` and you modified a file called `index.js`. If you check the state of your files using the command `git status`:
 ```
@@ -82,7 +88,9 @@ Changes to be committed:
 	new file:   constants.js
 ```
 Now both file changes are staged to be committed. 
+
 ## Committing
+
 When you make a commit, you essentially take a snapshot of the state of all the files in the directory at that point in time. This is the basis of tracking changes in git. To make a commit, use this command and include a descriptive message of what the commit does:
 ```
 git commit -m "Add constants file and import to favourites index"
@@ -96,6 +104,7 @@ You'll see something like this:
 Now your staged changes have been committed! (Note: unstaged changes will not be included in the commit). Commit often to make life easier.
 
 ## Recap
+
 Here are the basic steps: 
 ```
 // 1. Create and switch to new branch:
@@ -115,6 +124,7 @@ git commit -m "Write a descriptive commit message here"
 ```
 
 ## Learn more
+
 For more details and options, check out these links:
 * [Stage, Commit ](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 * [Branch](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)

@@ -3,15 +3,18 @@
 SwitchMap and MergeMap are smiliar operators, they're your go-to when you need to combine streams. Knowing the who, what, and why between these two operators will help you pick the right one for the job. Let's start with their similarites:
 
 #### SwitchMap
+
 SwitchMap is an operator that maps the values emitted from an observable to a different observable.
 
 #### MergeMap
+
 MergeMap is an operator that maps the values emitted from an observable to a different observable.
 
 ___
 Pretty ~~similar~~ identical so far, right? There _are_ differences, but I'll save those for later.  Let's first pick apart this definition and then move to the differences. 
 
 #### SwitchMap & MergeMap
+
 SwitchMap _and_ MergeMap are operators that map the values emitted from an observable to a different observable.
 
 To start, let's break apart SwitchMap and MergeMap into the individual **verbs** that make them up: 
@@ -24,6 +27,7 @@ To start, let's break apart SwitchMap and MergeMap into the individual **verbs**
 | Switch   | ?      | 
 
 #### Map
+
 When you see **map** you can read it as: 
 >Use the value of something to change it to something else.
 
@@ -78,6 +82,7 @@ A.K.A
 It helps to keep this definition in mind because there are numourouse Rx operators that have the word **map** tacked on to the end. And it's always for the same reason: "To use the _**value of something**_ to change it to _**something else**_."
 
 ##### Operators with map
+
 - map
 - concatMap
 - exhaustMap
@@ -93,6 +98,7 @@ Update the verbs with our map definition:
 | Switch   | ?      | 
 
 ### Merge
+
 Next verb in the list is merge.
 
 >Merge takes two or more observable streams and combines them together.
@@ -151,6 +157,7 @@ Update the verbs with our merge definition:
 | Switch   | ?      | 
 
 ### Switch
+
 Last verb on the list is switch.
 >Switch operates on a stream where each emission is another stream.  Switch will   stop listening to the orignal stream at each emission and changes to the new emitted stream.  At every subsequent emission from the root stream, it will stop listening to the previouse child stream. 
 
@@ -240,12 +247,15 @@ Update the verbs with our switch definition:
 | Switch   | Switch operates on a stream where each emission is another stream.  Switch will   stop listening to the original stream at each emission and changes to the new emitted stream.  At every subsequent emission from the root stream, it will stop listening to the previous child stream.       | 
 
 ### MergeMap & SwitchMap
+
 Now that we have all the verbs defined, we can combine the definitions together to understand these two operators. 
 
 ##### MergeMap
+
 >MergeMap changes (maps) the values emitted from one stream to a new stream.  It combines (merges) all the new streams into one stream. 
 
 ##### SwitchMap
+
 >SwitchMap changes (maps) the values emitted from one stream to a new stream.  It stops listening to the previous stream and changes (switches) to the next stream. 
 
 Let's see these in action, but this time I'll go with a more real-world example.

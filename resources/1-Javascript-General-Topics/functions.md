@@ -1,6 +1,7 @@
 # Functions
 
 ### Scope and Closure
+
 * When you first start writing a program in JS, you are in the `Global Scope`. If we define a variable, it will be defined globally.
 ```javascript
   const number = 1;
@@ -29,6 +30,7 @@ Locally scoped items are not available to the global scope.
 ```
 
 ### Anatomy of a function
+
 When we approach a function, one of the most valuable abilities is to comfortably understand what the goals
 and the use cases of a function are. This can be difficult when a function is not named well, however eventually
 even a poorly named function can be parsed by someone with enough experience and knowledge - for example:
@@ -44,6 +46,7 @@ and how it is intended to be used.
 There are two big things we'll focus on here, the `parameters` and the `return` of a function.
 
 #### Parameter
+
 The parameters should inform you almost immediately what expected information this function needs to work. If these parameters are not 
 passed in, odds are, this function is not going to behave as intended, or will most likely throw an error (you can make functions durable to prevent this, but that's neither here nor there).
 
@@ -67,6 +70,7 @@ Now this is a bit clearer. On first pass, it's clear now that the first paramete
 
 
 #### Return
+
 So we figured out the conceptual 'beginning' of the function interpretation, and that is resolving the values of the parameters. This lets us know what to replace, algebraically, in the function definitions body.
 So what's the next most important thing? Well really, what the 'result' of this function is going to be. That's what the return keyword is used for.
 
@@ -131,6 +135,7 @@ should give you a clear idea of the purpose. This is just a good practice, and s
 Additionally, because our function is returning a value, our `numberResult` gets set to that returned value, which in this case is `50`.
 
 ### Interpreting our code
+
 Everyone should behave a little bit like an interpreter when reading code. Going through your code in the right order and resolving
 expressions and operations is not something that comes naturally, but with time and practice. So let's practice
 

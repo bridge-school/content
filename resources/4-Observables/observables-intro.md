@@ -3,6 +3,7 @@
 Since JavaScript is single-threaded, we often run into situations that involve asynchronous data flows.
 
 ## What are asynchronous data flows again? 
+
 Data from functions that are processed in their own time, where the results will arrive outside the regular flow of the app. 
 
 For example, we often see this in the context of API calls when we request data from another server or backend service. We make a request for the data on the side and, once the data arrives, we put it in a queue to be processed. We don't actually stop and hold up all activity in the app until the data comes back. Instead, we put it to the side and process it when it arrives (and when we're ready) - [*insert link to event loop bridge content here*].
@@ -116,6 +117,7 @@ Observables:
 - Allows us to chain together array-like operators and pass observable streams through to parse, modify and maintain the data within them. We'll look at these next.
 
 ## Resources
+
 - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
 - [RxBook](https://xgrommx.github.io/rx-book/why_rx.html)
 - [Learning Observable By Building Observable](https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87)
