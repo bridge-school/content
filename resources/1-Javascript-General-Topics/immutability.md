@@ -72,13 +72,13 @@ animal = 'unicorn';
 
 console.log('var change', animal);
 
-let animal = 'horse';
-animal = 'unicorn';
+let animal2 = 'horse';
+animal2 = 'unicorn';
 
-console.log('let change', animal);
+console.log('let change', animal2);
 
-const animal = 'horse';
-animal = 'unicorn'; // Will give you an error
+const animal3 = 'horse';
+animal3 = 'unicorn'; // Will give you an error
 ```
 
 - const prevents you from overriding variables, but does not protect against object mutation
