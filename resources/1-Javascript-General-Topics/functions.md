@@ -8,7 +8,7 @@
 We generally want to avoid globally scoped variables as you can very quickly run into namespacing issues.
 
 * A local scope refers to any scope defined inside the global scope. Each function defined has its own local scope.
-```javascript
+```js
   // scope 1: Global scope out here
   const myFunction = () => {
     // scope 2: Local scope in here
@@ -17,7 +17,7 @@ We generally want to avoid globally scoped variables as you can very quickly run
 Locally scoped items are not available to the global scope.
 
 * When we define a function inside a function, the inner function has access to the scope of the outer function. But not the other way around. This is Closure! Thats all it is!!
-```javascript
+```js
   // scope 1: Global scope out here
   const myFunction = () => {
     // scope 2
@@ -33,7 +33,7 @@ When we approach a function, one of the most valuable abilities is to comfortabl
 and the use cases of a function are. This can be difficult when a function is not named well, however eventually
 even a poorly named function can be parsed by someone with enough experience and knowledge - for example:
 
-```javascript
+```js
 function myThing(someParam){
   return someParam * 10;
 }
@@ -57,7 +57,7 @@ return someParam * 10;
 now, we can infer something from this line. That if someParam was anything but a number, it wouldn't work as intended - thus,
 someParam is probably intended and expected to be a number. Let's try updating the function to be a bit clearer:
 
-```javascript
+```js
 function myThing(aNumber){
   return aNumber * 10;
 }

@@ -35,6 +35,10 @@ If you are accessing this repository directly on your own, here is a directory o
 
     1. [Observables Intro](./resources/4-Observables/observables-intro.md)
 
+3. Functional Programming
+    
+    1. [Functional Programming](./resources/3-Functional-Programming/functional-programming.md)
+
 5. React
     
     1. [React Component](./resources/5-React/react-component.md)
@@ -48,22 +52,6 @@ If you are accessing this repository directly on your own, here is a directory o
     1. [React Outline](./resources/5-React/react-outline.md)
 
     1. [React Summary](./resources/5-React/react-summary.md)
-
-3. Functional Programming
-    
-    1. [Functional Programming](./resources/3-Functional-Programming/functional-programming.md)
-
-7. Git
-    
-    1. [Git Branch Stage Commit](./resources/7-Git/git-branch-stage-commit.md)
-
-    1. [Git Cheatsheet](./resources/7-Git/git-cheatsheet.md)
-
-    1. [Git Fork](./resources/7-Git/git-fork.md)
-
-    1. [Git Intro](./resources/7-Git/git-intro.md)
-
-    1. [Git Rebase](./resources/7-Git/git-rebase.md)
 
 6. Redux
     
@@ -82,6 +70,18 @@ If you are accessing this repository directly on your own, here is a directory o
     1. [Redux Store](./resources/6-Redux/redux-store.md)
 
     1. [Redux Thunk](./resources/6-Redux/redux-thunk.md)
+
+7. Git
+    
+    1. [Git Branch Stage Commit](./resources/7-Git/git-branch-stage-commit.md)
+
+    1. [Git Cheatsheet](./resources/7-Git/git-cheatsheet.md)
+
+    1. [Git Fork](./resources/7-Git/git-fork.md)
+
+    1. [Git Intro](./resources/7-Git/git-intro.md)
+
+    1. [Git Rebase](./resources/7-Git/git-rebase.md)
 
 8. Other
     
