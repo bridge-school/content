@@ -6,7 +6,7 @@ Since JavaScript is single-threaded, we often run into situations that involve a
 
 Data from functions that are processed in their own time, where the results will arrive outside the regular flow of the app. 
 
-For example, we often see this in the context of API calls when we request data from another server or backend service. We make a request for the data on the side and, once the data arrives, we put it in a queue to be processed. We don't actually stop and hold up all activity in the app until the data comes back. Instead, we put it to the side and process it when it arrives (and when we're ready) - [*insert link to event loop bridge content here*].
+For example, we often see this in the context of API calls when we request data from another server or backend service. We make a request for the data on the side and, once the data arrives, we put it in a queue to be processed. We don't actually stop and hold up all activity in the app until the data comes back. Instead, we put it to the side and process it when it arrives (and when we're ready) - [read more about event loop](https://github.com/bridge-school/content/blob/e635234b330df2b7fb6bd425efa10391027ae620/resources/1-Javascript-General-Topics/js-eventloop.md).
 
 We also encounter this with DOM events, timer intervals, web workers and web sockets.
 
@@ -79,14 +79,15 @@ Our observer contains 1 to 3 functions to be executed by the observable:
  - complete: function that will be executed when a 'completed' is emitted (optional)
 
  ```javascript
-this.data
-    .subscribe(myObserver);
-
 const myObserver = {
     next: console.log,
     error: console.error,
     complete: () => console.info('complete')
 }
+const subscription = this.data
+    .subscribe(myObserver);
+    
+setTimeout(() => subscription.unsubscribe(), 5000);
 ```
 
 Those functions you pass in as part of the observer object will stay active and listen for those events until you manually decide to unsubscribe from and stop listening to the observable.
