@@ -4,7 +4,7 @@ Bridge is a community organization. We value the involvement of everyone in this
 
 To make clear what is expected, everyone participating in Bridge activities is required to conform to the following Code of Conduct. This code of conduct applies to all spaces managed by Bridge including, but not limited to, classes, email lists, and online forums (including GitHub). Instructors and corporate sponsors are expected to assist with enforcement of the Code of Conduct.
 
-If you believe someone is violating the Code of Conduct we ask that you report it to Emily Robinson, Course Director (emily.robinson@rangle.io), Abdella Ali, Core Instructor (abdella@rangle.io), or Purvi Kanal, Core Instructor (purvi.kanal@rangle.io). All reports will be kept confidential, and will be dealt with promptly.
+If you believe someone is violating the Code of Conduct we ask that you report it to Emily Porta, Executive Director (emily@bridgeschool.io), Abdella Ali, Director of Software Development (abdella@rangle.io), or Purvi Kanal, Director of Software Development (purvi.kanal@rangle.io). All reports will be kept confidential, and will be dealt with promptly.
 
 
 ## Code of Conduct
