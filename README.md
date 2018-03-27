@@ -35,6 +35,20 @@ If you are accessing this repository directly on your own, here is a directory o
 
     1. [Array Reduce](./resources/2-Working-With-Arrays/array-reduce.md)
 
+5. React
+    
+    1. [React Component](./resources/5-React/react-component.md)
+
+    1. [React Container](./resources/5-React/react-container.md)
+
+    1. [React Intro](./resources/5-React/react-intro.md)
+
+    1. [React Lifecycles](./resources/5-React/react-lifecycles.md)
+
+    1. [React Outline](./resources/5-React/react-outline.md)
+
+    1. [React Summary](./resources/5-React/react-summary.md)
+
 3. Functional Programming
     
     1. [Functional Programming](./resources/3-Functional-Programming/functional-programming.md)
@@ -51,15 +65,11 @@ If you are accessing this repository directly on your own, here is a directory o
     
     1. [Redux Action Reducer](./resources/6-Redux/redux-action-reducer.md)
 
-    1. [Redux Connect](./resources/6-Redux/redux-connect.md)
-
-    1. [Redux Hello](./resources/6-Redux/redux-hello.md)
-
     1. [Redux Intro](./resources/6-Redux/redux-intro.md)
 
     1. [Redux Logging](./resources/6-Redux/redux-logging.md)
 
-    1. [Redux Merge](./resources/6-Redux/redux-merge.md)
+    1. [Redux Observables](./resources/6-Redux/redux-observables.md)
 
     1. [Redux Store](./resources/6-Redux/redux-store.md)
 
@@ -76,20 +86,6 @@ If you are accessing this repository directly on your own, here is a directory o
     1. [Git Intro](./resources/7-Git/git-intro.md)
 
     1. [Git Rebase](./resources/7-Git/git-rebase.md)
-
-5. React
-    
-    1. [React Component](./resources/5-React/react-component.md)
-
-    1. [React Container](./resources/5-React/react-container.md)
-
-    1. [React Intro](./resources/5-React/react-intro.md)
-
-    1. [React Lifecycles](./resources/5-React/react-lifecycles.md)
-
-    1. [React Outline](./resources/5-React/react-outline.md)
-
-    1. [React Summary](./resources/5-React/react-summary.md)
 
 8. Other
     
