@@ -19,6 +19,8 @@ If you are accessing this repository directly on your own, here is a directory o
 
     1. [Functions](./resources/1-Javascript-General-Topics/functions.md)
 
+    1. [Higher Order Functions](./resources/1-Javascript-General-Topics/higher-order-functions.md)
+
     1. [Immutability](./resources/1-Javascript-General-Topics/immutability.md)
 
     1. [Javascript Interpreter](./resources/1-Javascript-General-Topics/javascript-interpreter.md)
@@ -35,6 +37,18 @@ If you are accessing this repository directly on your own, here is a directory o
 
     1. [Array Reduce](./resources/2-Working-With-Arrays/array-reduce.md)
 
+4. Observables
+    
+    1. [Observable Switchmap Vs Mergemap](./resources/4-Observables/observable-switchmap-vs-mergemap.md)
+
+    1. [Observables Create](./resources/4-Observables/observables-create.md)
+
+    1. [Observables Intro](./resources/4-Observables/observables-intro.md)
+
+3. Functional Programming
+    
+    1. [Functional Programming](./resources/3-Functional-Programming/functional-programming.md)
+
 5. React
     
     1. [React Component](./resources/5-React/react-component.md)
@@ -48,18 +62,6 @@ If you are accessing this repository directly on your own, here is a directory o
     1. [React Outline](./resources/5-React/react-outline.md)
 
     1. [React Summary](./resources/5-React/react-summary.md)
-
-3. Functional Programming
-    
-    1. [Functional Programming](./resources/3-Functional-Programming/functional-programming.md)
-
-4. Observables
-    
-    1. [Observable Switchmap Vs Mergemap](./resources/4-Observables/observable-switchmap-vs-mergemap.md)
-
-    1. [Observables Create](./resources/4-Observables/observables-create.md)
-
-    1. [Observables Intro](./resources/4-Observables/observables-intro.md)
 
 6. Redux
     
@@ -75,6 +77,14 @@ If you are accessing this repository directly on your own, here is a directory o
 
     1. [Redux Thunk](./resources/6-Redux/redux-thunk.md)
 
+8. Other
+    
+    1. [Resources](./resources/8-Other/resources.md)
+
+    1. [Set Up Node](./resources/8-Other/set-up-node.md)
+
+    1. [Tips And Tricks](./resources/8-Other/tips-and-tricks.md)
+
 7. Git
     
     1. [Git Branch Stage Commit](./resources/7-Git/git-branch-stage-commit.md)
@@ -86,12 +96,4 @@ If you are accessing this repository directly on your own, here is a directory o
     1. [Git Intro](./resources/7-Git/git-intro.md)
 
     1. [Git Rebase](./resources/7-Git/git-rebase.md)
-
-8. Other
-    
-    1. [Resources](./resources/8-Other/resources.md)
-
-    1. [Set Up Node](./resources/8-Other/set-up-node.md)
-
-    1. [Tips And Tricks](./resources/8-Other/tips-and-tricks.md)
  <!---generated end-->
