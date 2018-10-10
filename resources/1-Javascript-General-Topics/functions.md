@@ -2,11 +2,11 @@
 
 ### Scope and Closure
 
-* When you first start writing a program in JS, you are in the `Global Scope`. If we define a variable, it will be defined globally.
+* When we first start writing a program in JS, we are in the `Global Scope`. If we define a variable, it will be defined globally.
 ```javascript
   const number = 1;
 ```
-We generally want to avoid globally scoped variables as you can very quickly run into namespacing issues.
+We generally want to avoid globally scoped variables as we can very quickly run into namespacing issues.
 
 * A local scope refers to any scope defined inside the global scope. Each function defined has its own local scope.
 ```js
@@ -32,7 +32,7 @@ Locally scoped items are not available to the global scope.
 ### Anatomy of a function
 
 When we approach a function, one of the most valuable abilities is to comfortably understand what the goals
-and the use cases of a function are. This can be difficult when a function is not named well, however eventually
+and the use cases of a function are. This can be difficult when a function is not named well. However, eventually,
 even a poorly named function can be parsed by someone with enough experience and knowledge - for example:
 
 ```js
@@ -86,7 +86,7 @@ function multiplyNumberByTen(aNumber){
 }
 ```
 
-Now this might start to look a bit intimidating, but let's break it down and demystify. We have an expression being passed into
+Now, this might start to look a bit intimidating, but let's break it down and demystify. We have an expression being passed into
 a function call it looks like! Not only that, part of the expression is a function itself - how does this all work, what is the order?
 
 Well, one thing to remember, is that before any variables or expressions are passed into a function as an argument, they need to be resolved
